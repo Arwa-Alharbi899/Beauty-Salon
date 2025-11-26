@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #ffe6f2; /* بيبي بينك */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Navbar */
+        .site-header {
+            background-color: #ff9ccf;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .site-header .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            background-color: #ff9ccf;
+            padding: 8px 16px;
+            border-radius: 6px;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #ff7cbe;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #d63384;
+            margin-bottom: 20px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        .cta {
+            background-color: #ff9ccf;
+            color: white;
+            border: none;
+            padding: 14px;
+            width: 100%;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+
+        .cta:hover {
+            background-color: #ff7cbe;
+        }
+
+        .social-icons a {
+   
+    background-color: #f7d3e5;
+    color: white;
+    padding: 10px;
+    margin: 60px 0;   /* ← هنا المسافة بين الروابط */
+    text-decoration: none;
+    border-radius: 2px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #ff7cbe;
+}
+
+
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="logo">Beauty Salon</div>
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="services.html">خدماتنا</a>
+        <a href="contact.html" class="active">اتصل بنا</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2> اقتراح - شكوى</h2>
+
+    <form>
+        <input type="text" placeholder="الاسم" required>
+        <input type="email" placeholder="البريد الإلكتروني" required>
+        <textarea rows="5" placeholder="اكتب رسالتك هنا" required></textarea>
+        <button type="submit" class="cta">إرسال</button>
+    </form>
+    
+    <div style="height: 30px;"></div> 
+    <a class="cta back" href="index.html">الرجوع للصفحة الرئيسية</a>
+
+    <div class="contact-info">
+        <h3>أرقام التواصل</h3>
+        <p>  اتصال: 0501234567 </p>
+        <p> واتساب: 0507654321</p>
+    
+        <h3>حساباتنا على السوشيال ميديا</h3>
+        <div class="social-icons">
+            <a href="https://instagram.com" target="_blank"> Instagram</a>
+            <a href="https://twitter.com" target="_blank"> Twitter</a>
+            <a href="https://Snapchat.com" target="_blank"> Snapchat</a>
+        </div>
+    </div>
+    
+</div>
+
+</body>
+</html>
+

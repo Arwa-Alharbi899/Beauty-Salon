@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدماتنا</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #ffe6f2; /* بيبي بينك */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Navbar */
+        .site-header {
+            background-color: #ff9ccf;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .site-header .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            background-color: #ff9ccf;
+            padding: 8px 16px;
+            border-radius: 6px;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #ff7cbe;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #d63384;
+            margin-bottom: 30px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 12px;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .service-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .service-card h3 {
+            color: #d63384;
+            margin: 10px 0;
+        }
+
+        .service-card p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .cta {
+            background-color: #ff9ccf;
+            color: white;
+            padding: 8px 12px;
+            font-size: 14px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .cta:hover {
+            background-color: #b82c70;
+        }
+
+        /* Prices dropdown */
+        .prices {
+            display: none;
+            text-align: right;
+            padding: 10px;
+            margin-top: 10px;
+            border-top: 1px solid #ddd;
+            list-style-type: none;
+            color: #555;
+        }
+
+        .toggle-prices {
+            background-color: #ff9ccf;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .toggle-prices:hover {
+            background-color: #ff7cbe;
+        }
+
+        a.back {
+            display: block;
+            margin-top: 30px;
+            color: #d63384;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="logo">Beauty Salon</div>
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="services.html" class="active">خدماتنا</a>
+        <a href="contact.html">اتصل بنا</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>خدماتنا</h2>
+
+    <div class="services-grid">
+
+        <div class="service-card">
+            <img src="images/service1.jpg" alt=" تسريحات & قص شعر">
+            <h3>  تسريحات & قص شعر </h3>
+            <p>شغل شعر احترافي يناسب جميع الأذواق.</p>
+            <button class="toggle-prices">عرض الأسعار</button>
+            <ul class="prices">
+                <li>قص الشعر القصير: 100 ريال</li>
+                <li>قص الشعر الطويل: 150 ريال</li>
+                <li>تصفيف الشعر: 80 ريال</li>
+                <li>تسريحة للشعر الطويل: 200 ريال</li>
+                <li>تسريحة للشعر القصير: 150 ريال</li>
+
+            </ul>
+            <a class="cta" href="booking.html">احجزي الآن</a>
+        </div>
+
+        <div class="service-card">
+            <img src="images/service5.jpg" alt="مكياج">
+            <h3>مكياج</h3>
+            <p>مكياج ناعم وسهرات بألوان رائعة.</p>
+            <button class="toggle-prices">عرض الأسعار</button>
+            <ul class="prices">
+                <li>مكياج نهاري: 120 ريال</li>
+                <li>مكياج سهرات: 180 ريال</li>
+                <li>مكياج عروس: 300 ريال</li>
+            </ul>
+            <a class="cta" href="booking.html">احجزي الآن</a>
+        </div>
+
+        <div class="service-card">
+            <img src="images/service6.jpg" alt="صبغ شعر">
+            <h3>صبغ شعر</h3>
+            <p>ألوان عصرية وجودة عالية في التنفيذ.</p>
+            <button class="toggle-prices">عرض الأسعار</button>
+            <ul class="prices">
+                <li>صبغ الشعر القصير: 150 ريال</li>
+                <li>صبغ الشعر الطويل: 200 ريال</li>
+                <li>هايلايت: 250 ريال</li>
+            </ul>
+            <a class="cta" href="booking.html">احجزي الآن</a>
+        </div>
+
+        <div class="service-card">
+            <img src="images/service4.jpg" alt="أظافر">
+            <h3>باديكير & مانيكير</h3>
+            <p>عناية متكاملة بأظافرك بأحدث الأساليب.</p>
+            <button class="toggle-prices">عرض الأسعار</button>
+            <ul class="prices">
+                <li>مانيكير: 80 ريال</li>
+                <li>باديكير: 100 ريال</li>
+                <li>علاج الأظافر: 50 ريال</li>
+            </ul>
+            <a class="cta" href="booking.html">احجزي الآن</a>
+        </div>
+
+    </div>
+
+    <a class="cta back" href="index.html">الرجوع للصفحة الرئيسية</a>
+  </div>
+
+<script>
+    const toggles = document.querySelectorAll('.toggle-prices');
+    toggles.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const prices = btn.nextElementSibling;
+            if(prices.style.display === 'block') {
+                prices.style.display = 'none';
+            } else {
+                prices.style.display = 'block';
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
+
